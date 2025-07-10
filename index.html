@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gadget Plug - Your Ultimate Tech & Gadget Reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-plug"></i>
+                    <div>
+                        <h1>Gadget Plug</h1>
+                        <p class="tagline">Unboxing the Future, One Gadget at a Time</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/gad_get_plug/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@GadgetPlug-y9u" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61577583989974" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <div class="nav-links">
+                <a href="#featured" class="nav-link">Featured</a>
+                <a href="#products" class="nav-link">All Products</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
+        <button class="close-btn" id="closeBtn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#featured" class="mobile-nav-link">Featured</a>
+            <a href="#products" class="mobile-nav-link">All Products</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#faq" class="mobile-nav-link">FAQ</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <img src="massaquoi.jpg" alt="Vandi Massaquoi" class="profile-pic">
+            <h2>Hey Tech Enthusiasts! Welcome to Gadget Plug</h2>
+            <p>I'm Vandi Massaquoi, your go-to source for honest, in-depth reviews of the latest and greatest gadgets. My mission is to help you make informed decisions before you buy!</p>
+            <a href="#featured" class="cta-button">Browse Featured Products</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="filter-section">
+            <div class="filter-bar">
+                <button class="active" data-category="all">All Products</button>
+                <button data-category="home-office">Home & Office</button>
+                <button data-category="office">Smart Office</button>
+                <button data-category="kitchen">Kitchen Items</button>
+                <button data-category="smart-home">Smart Home</button>
+                <button data-category="building">Building</button>
+                <button data-category="accessories">Accessories</button>
+            </div>
+            <div class="search-sort-container">
+                <div class="search-container">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                </div>
+                <div class="sort-container">
+                    <span>Sort by:</span>
+                    <select id="sortSelect">
+                        <option value="newest">Newest First</option>
+                        <option value="rating">Top Rated</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-section" id="featured">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="featured-products">
+                <!-- Featured Product 1 -->
+                <div class="card" data-category="accessories" data-rating="4.7" data-price="79.99" data-date="2023-05-15">
+                    <img src="Self-Cleaning Water Bottle.jpg" alt="Self-Cleaning Water Bottle" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Self-Cleaning Water Bottle</h3>
+                        <p class="product-description">Hydrogen Water Bottle – 2-in-1 Portable Hydrogen Water Generator
+                             – Thermos Bottle with Flip Top Lid – SPE/PEM Technology – BPA-Free Tritan – Self Cleaning Function.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7/5)</span>
+                        </div>
+                        <div class="price">$79.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3TVV6p3" class="btn btn-primary">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product 2 -->
+                <div class="card" data-category="smart-home" data-rating="5" data-price="39.99" data-date="2023-03-10">
+                    <img src="Portable Blender Bottle1.jpg" alt="Portable Blender Bottle" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Portable Blender Bottle"</h3>
+                        <p class="product-description">Portable Personal Electric USB Juicer，500ML Mini Blender Portable Blender For 
+                            Shakes and Smoothies juice，12 Blades Great for Mixing，Compact、Convenient and Versatile (Purple).</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(5/5)</span>
+                        </div>
+                        <div class="price">$39.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3IdQlVk" class="btn btn-primary">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Featured Product 3 -->
+                <div class="card" data-category="accessories" data-rating="4.2" data-price="97.49" data-date="2023-06-20">
+                    <img src="Smart Plug Socket.jpg" alt="Smart Plug Socket" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Smart Plug Socket</h3>
+                        <p class="product-description">ALink2Home Wireless Charging Pop Up Outlet 10W Fast Induction Charger with Type-C USB, 3 Power
+                             Outlets 15A, 2 USB Ports 3.0A, Splash Resistant, Matt Black Finish, for Kitchen Counter Island, Office.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.2/5)</span>
+                        </div>
+                        <div class="price">$97.49</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/44gn8ll" class="btn btn-primary">Buy on Amazon</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <h2 class="section-title">All Products</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Product 1 -->
+                <div class="card" data-category="smart-home" data-rating="4.6" data-price="23.99" data-date="2025-07-05">
+                    <img src="Self Stirring Coffee Mug.jpg" alt="Self Stirring Coffee Mug" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Self Stirring Coffee Mug</h3>
+                        <p class="product-description">FREE ROCK Self Stirring Coffee Mug With Lid 500ML Automatic Magnetic Self Stirring
+                             Cup 16.9 Oz Rechargeable Auto Mixing Cup for Milk Cocoa Coffee Stirrer Electric Auto Stir Coffee Mug Mixer.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$23.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4nz4RXY" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="card" data-category="office" data-rating="4.3" data-price="7.92" data-date="2025-07-04">
+                    <img src="desk cable organizer.jpg" alt="desk cable organizer" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">desk cable organizer</h3>
+                        <p class="product-description">8 Pack Cord Organizer Holder,Costop Strong Adhesive Desk Cable Management Magnetic Easy Open,Organize 
+                            Phone Charging Cords Wire Holder Organizer Neatly for Home,Office,Car,Desk,Nightstand.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.3/5)</span>
+                        </div>
+                        <div class="price">$7.92</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4l7eVWx" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="card" data-category="accessories" data-rating="4.9" data-price="13.49" data-date="2025-07-04">
+                    <img src="chaning pad.jpg" alt="Wireless Charging Pad" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Wireless Charging Pad</h3>
+                        <p class="product-description">Charging Station for Multiple Devices Apple, Foldable 3 in 1 Wireless Charger 
+                            for iPhone 16/15/14/13/12/Pro/Max/Plus, Apple Watch 10/9/Ultra/8/7/6/5/4/3/2/SE & AirPods 4/3/2/Pro.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9/5)</span>
+                        </div>
+                        <div class="price">$13.49</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3Gj4VKJ" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card" data-category="accessories" data-rating="4.7" data-price="39.16" data-date="2025-07-07">
+                    <img src="Solar Power Bank.jpg" alt="Solar Power Bank " class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Solar Power Bank </h3>
+                        <p class="product-description">GOODaaa Portable Charger 42800mAh Built in 4 Cables and Thermometer 15W Fast Charging Power
+                             Bank Five Outputs Three Inputs Solar Charger Power Bank, SOS/Strobe/Strong Flashlights, Carabiner.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.4/5)</span>
+                        </div>
+                        <div class="price">$39.16</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3TsbrBV" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card" data-category="accessories" data-rating="4.9" data-price="31.34" data-date="2025-07-07">
+                    <img src="Bluetooth Earbud.jpg" alt=" Bluetooth Earbud" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title"> Bluetooth Earbud</h3>
+                        <p class="product-description">Wireless Earbuds, Bluetooth 5.4 Headphones with Multifunctional Touch Screen, 48H Bass Stereo Ear Buds with
+                             ANC/ENC Noise Cancelling/Transparency Mode, IPX7 Earphones with 5 EQ Modes for iOS Android.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.9/5)</span>
+                        </div>
+                        <div class="price">$31.34</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4lHGntN" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="office" data-rating="4.4" data-price="25.99" data-date="2025-07-07">
+                    <img src="Wireless Mouse + Mini Keyboard Combo.jpg" alt="Wireless Mouse + Mini Keyboard Combo" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Wireless Mouse + Mini Keyboard Combo</h3>
+                        <p class="product-description">Portable Wireless Keyboard and Mouse Combo, Bluetooth 3.0/5.0/2.4G, Multi-Device 
+                            pc,Laptop,Phone,Windows,iOS,Android Compatible, Rechargeable,78KEY,11.2inch Length (Gray).</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.4/5)</span>
+                        </div>
+                        <div class="price">$25.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3Tvpw1m" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="smart-home" data-rating="4.6" data-price="9.99" data-date="2025-07-07">
+                    <img src="Rechargeable Motion Sensor Light.jpg" alt="Rechargeable Motion Sensor Light" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Rechargeable Motion Sensor Light</h3>
+                        <p class="product-description">Gritin 10.2inch Under Cabinet Lighting Rechargeable -84 LED Super Bright,3-Color& 5 Level Brightness,4 Modes,Motion Sensor, 
+                            Long Lasting- Easy Installation Magnetic Under Cabinet Closet Lights -2 Pack.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$9.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4nE5Xlh" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card" data-category="accessories" data-rating="4.2" data-price="11.99" data-date="2025-07-07">
+                    <img src="Phone Tripod  Bluetooth Remote.jpg" alt=" Phone Tripod w/ Bluetooth Remote" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title"> Phone Tripod w/ Bluetooth Remote</h3>
+                        <p class="product-description">Acuvar 50" Aluminum Tripod for iPhone Camera & Camcorder with Phone Holder, Phone Stand to Fit All Phones,
+                             iPhone & All Samsung Galaxy Android & Nikon Canon Sony Olympus Fuji Cameras with Travel Bag.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.2/5)</span>
+                        </div>
+                        <div class="price">$11.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/45UN2fE" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card" data-category="smart-home" data-rating="4.2" data-price="8.79" data-date="2025-07-07">
+                    <img src="Rechargeable USB Fan.jpg" alt="Rechargeable USB Fan" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Rechargeable USB Fan</h3>
+                        <p class="product-description">Desk Fan Battery Operated, Portable USB Rechargeable Fan, 2000mAh 180° Tilt Folding Personal
+                             Fan With Power Display, 5 Speeds Ultra Quiet Table Fan for Desktop, Home, Travel - Black.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.2/5)</span>
+                        </div>
+                        <div class="price">$8.79</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4nvmZSu" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="smart-home" data-rating="4.6" data-price="45.11" data-date="2025-07-07">
+                    <img src="Mini Vacuum Cleaner.jpg" alt="Mini Vacuum Cleaner" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Mini Vacuum Cleaner</h3>
+                        <p class="product-description">Vacuum/Air Duster 80,000RPM Super Power Mini Car Vacuum Cleaner 4-in-1 air Blower Gun Air Duster 
+                            & Air Blower & Pump Hand Electric air Duster Handheld dust Blower Blower Cordless (Purple).</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$45.11</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3GANYLN" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="home-office" data-rating="4.7" data-price="22.19" data-date="2025-07-07">
+                    <img src="Smart Power Strip.jpg" alt="Smart Power Strip" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Smart Power Strip</h3>
+                        <p class="product-description">Tower Power Strip Surge Protector with 16 Outlets and 5 USB Ports (2 USB-C), 6FT Extension Cord with Multiple Outlets,Heavy 
+                            Duty Charging Station,Home Office Dorm Room Essentials. No Wireless Charging.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7/5)</span>
+                        </div>
+                        <div class="price">$22.19</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4lDMe3i" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="office" data-rating="4.6" data-price="13.99" data-date="2025-07-07">
+                    <img src="Universal Gadget Cleaner Kit.jpg" alt="Universal Gadget Cleaner Kit " class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Universal Gadget Cleaner Kit </h3>
+                        <p class="product-description">34-in-1 for iPhone Cleaning Kit, Keyboard Cleaning Kit Multi-Functional, Laptop Cleaning Kit with Portable Storage 
+                            Case for Airpods Laptop Keyboard Charging Port Camera Earbud iPhone Port Black.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$13.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/409bqGI" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="card" data-category="home-office" data-rating="4.3" data-price="18.61" data-date="2025-07-07">
+                    <img src="Car Phone Holder + Charger.jpg" alt="Car Phone Holder + Charger" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Car Phone Holder + Charger</h3>
+                        <p class="product-description">CHGeek Wireless Car Charger Phone Holder Mount, 15W Fast Charging Auto Clamping Phone Holders for Your Car
+                             Dashboard Windshield Air Vent Car Accessories for iPhone, Samsung Galaxy, Google Pixel etc.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.3/5)</span>
+                        </div>
+                        <div class="price">$18.61</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4eQdGsr" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="accessories" data-rating="4.4" data-price="19.99" data-date="2025-07-07">
+                    <img src="Bluetooth Speaker.jpg" alt="Bluetooth Speaker" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Bluetooth Speaker</h3>
+                        <p class="product-description">Bluetooth Speaker with HD Sound, Portable Wireless, IPX5 Waterproof, Up to 20H Playtime, TWS Pairing, BT5.3,
+                             for Home/Party/Outdoor/Beach, Electronic Gadgets, Birthday Gift (Black).</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.4/5)</span>
+                        </div>
+                        <div class="price">$19.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4eF0KFL" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="accessories" data-rating="3.9" data-price="56.99" data-date="2025-07-07">
+                    <img src="Multifunction Repair Tool.jpg" alt="Multifunction Repair Tool" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Multifunction Repair Tool</h3>
+                        <p class="product-description"> Bicycle Tool Kit Multi-Function Tool Kit, 
+                            Maintenance Tool Set with Tool Box Best Value Professional Home Bike Tool with Premium Quality.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(3.9/5)</span>
+                        </div>
+                        <div class="price">$56.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/44nlApM" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="accessories" data-rating="4.1" data-price="10.99" data-date="2025-07-07">
+                    <img src="Mini Solar Panel Charger.webp" alt="Mini Solar Panel Charger" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Mini Solar Panel Charger</h3>
+                        <p class="product-description">Mini 6W Solar Panels Chargers USB 5V Small Monocrystalline Power Emergency Panels IP67 Waterproof
+                             for Outdoor Security Camera Fans Flashlight Pond Air Bubbler Fish Tank Oxygen Pump.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.1/5)</span>
+                        </div>
+                        <div class="price">$10.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/44Tz10E" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="smart-home" data-rating="4.3" data-price="9.48" data-date="2025-07-07">
+                    <img src="LED Strip Light.jpg" alt="LED Strip Lightr" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">LED Strip Light</h3>
+                        <p class="product-description">CTJOY LED Lights for Bedroom 100ft, RGB Color Changing Led Strip Lighting with Remote
+                             and Smart APP Control, Music Sync Rope Lights via Bluetooth for Kitchen, TV, Room Decor.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.3/5)</span>
+                        </div>
+                        <div class="price">$9.48</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/44V3lrG" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 4 -->
+                <div class="card" data-category="kitchen" data-rating="4.5" data-price="33.99" data-date="2025-07-07">
+                    <img src="electric cooker.jpg" alt="Electric Rice Cooker" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Electric Rice Cooker</h3>
+                        <p class="product-description">COMFEE' Compact Rice Cooker, 6-in-1 Stainless Steel Multi Cooker, Slow Cooker, Steamer, Saute, 
+                            and Warmer, 2 QT, 8 Cups Cooked(4 Cups Uncooked), Brown Rice, Quinoa and Oatmeal, 6 One-Touch Programs.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.5/5)</span>
+                        </div>
+                        <div class="price">$33.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3TZYYFE" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="card" data-category="kitchen" data-rating="4.3" data-price="199.99" data-date="2025-07-07">
+                    <img src="electric stove.jpg" alt="Electric Stove" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Electric Stove</h3>
+                        <p class="product-description">Double Induction Cooktop, Portable 1800W Induction Cooker 2 Burner Independent Touch Control
+                            , Ceramic Electric Stove with 9 Temperature and Power Level, Safety Lock, 3 Hour Timer - Black.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.3/5)</span>
+                        </div>
+                        <div class="price">$199.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/407tRM2" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="card" data-category="kitchen" data-rating="4.7" data-price="17.99" data-date="2025-07-07">
+                    <img src="vegetable chopper2.jpg" alt="Vegetable Chopper" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Vegetable Chopper</h3>
+                        <p class="product-description">Cutter with Container, Manual Hand Food Veggie Dicer with 2 Chopping Blades for
+                             Potato Strips, Onion Cubers, Carrot Sticks, Essential Kitchen Gadgets (2 in 1, Gray).</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.7/5)</span>
+                        </div>
+                        <div class="price">$17.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3ZWPgHG" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="card" data-category="kitchen" data-rating="4.8" data-price="13.99" data-date="2025-07-70">
+                    <img src="multi use kitchen scissor.jpg" alt="multi-use kitchen scissors" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">multi-use kitchen scissors</h3>
+                        <p class="product-description">Kitchen Cooking Shears Heavy Duty Kitchen Scissor with, Detachable, 
+                            All Purpose Scissors, Dishwasher Safe Scissors, Serrated Blades, Nutcracker and Bottle Opener function included (1 Pack).</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.8/5)</span>
+                        </div>
+                        <div class="price">$13.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3IcVSLL" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="card" data-category="building" data-rating="4.1" data-price="27.99" data-date="2023-04-15">
+                    <img src="multifunction screwdriver kit.jpg" alt="multifunction screwdriver kit" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">multifunction screwdriver kit</h3>
+                        <p class="product-description">Precision Screwdriver Set, 46 in 1 Mini Screwdrivers, Screwdriver Bit Sets, 
+                            Multifunction Precision Screwdriver Kit, Repair Tool Kit for Electronics, Computer, Eyeglass, Phone, Watch.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(4.1/5)</span>
+                        </div>
+                        <div class="price">$27.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4eF7Av6" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="card" data-category="smart-home" data-rating="4.9" data-price="9.99" data-date="2023-03-25">
+                    <img src="USB Fan.webp" alt="USB Fan" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">USB Fan</h3>
+                        <p class="product-description">Simpeak Small USB Fan Small Quiet Portable USB Powered ONLY (No Battery),
+                             Cooling 3 Speed Setting 360° Adjustable Swivel Desktop Personal Fan for Home Office Bedroom Outdoor Travel Summer, Blue.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(4.9/5)</span>
+                        </div>
+                        <div class="price">$9.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/40FojbB" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="card" data-category="home" data-rating="4.6" data-price="15.99" data-date="2023-06-05">
+                    <img src="cordless scrubber.jpg" alt="Cordless Scrubber" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Cordless Scrubber</h3>
+                        <p class="product-description">Electric Spin Scrubber, Cordless Shower Scrubber with 8 Replaceable Brush Heads, 2 Adjustable Speeds
+                             and 3 Extension Handle, 90Mins Work Time Shower Cleaning Brush for Bathroom Floor Tile Tub.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$15.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4km4Cg8" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 9 -->
+                <div class="card" data-category="smart-home" data-rating="4.6" data-price="24.99" data-date="2023-06-05">
+                    <img src="Electric Soap Dispenser.jpg" alt="Electric Soap Dispenser" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Electric Soap Dispenser</h3>
+                        <p class="product-description">Automatic Soap Dispenser Touchless Foaming Soap Dispenser
+                             380ml/12.8oz Rechargeable, Wall Mounted, 4 Levels Adjustable Foam Soap Pump for Bathroom Kitchen Dish Soap.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$24.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/46qUoaQ" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 10 -->
+                <div class="card" data-category="smart-home" data-rating="4.4" data-price="39.99" data-date="2023-06-05">
+                    <img src="Cordless Handheld Vacuum.webp" alt="Cordless Handheld Vacuum" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">Cordless Handheld Vacuum</h3>
+                        <p class="product-description">AHNR Handheld Car Vacuum Cleaner Cordless with Brushless Motor, 20000PA High Power
+                             Vacuum Cleaner & Air Duster, 3 in 1 Keyboard Portable Mini Hand Held Vacuums Cleaner for Car Home.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$39.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/3TX8TvA" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="card" data-category="home" data-rating="4.6" data-price="21.99" data-date="2023-06-05">
+                    <img src="Wireless Bottle Lamp.jpg" alt="WILIT Wireless Bottle Lamp" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">WILIT Wireless Bottle Lamp</h3>
+                        <p class="product-description">Shades for Table Lamps, Bottle Lights for Liquor Bottles, 
+                            Touch Lamps for Kitchen Dinning Picnic,Home Bar Decorations, Modern Wine Bottle Lights, Gifts for Men Women.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$21.99</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4lF8EkN" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Product 12 -->
+                <div class="card" data-category="home" data-rating="4.6" data-price="18.93" data-date="2023-06-05">
+                    <img src="cutton.jpg" alt="RYB HOME Bathroom Window Curtains" class="product-image">
+                    <div class="card-content">
+                        <h3 class="product-title">RYB HOME Bathroom Window Curtains</h3>
+                        <p class="product-description">Super Soft Blackout Privacy Curtains for 
+                            Baby Nursery Bedroom Basement Garege Workshop Kitchen Dining Living Room, W 29 x L 30, Dark Green, 2 Pcs.</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(4.6/5)</span>
+                        </div>
+                        <div class="price">$18.93</div>
+                        <div class="button-group">
+                            <a href="#" class="btn btn-outline">Read Review</a>
+                            <a href="https://amzn.to/4ezRe6D" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="affiliate-disclosure">
+            <h3>Affiliate Disclosure</h3>
+            <p>Disclosure: This page contains affiliate links. If you make a purchase through these links, I may earn a commission at no extra cost to you. I only recommend products that I genuinely believe in and have personally tested or researched extensively.</p>
+            <a href="#" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">Learn more about our affiliate policy</a>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Gadget Plug</h2>
+                        <p>Gadget Plug was founded by Vandi Massaquoi in 2025 with a simple mission: to help people navigate the complex world of technology and find the best gadgets for their needs.</p>
+                        <p>With over a decade of experience in tech journalism and product testing, I bring an honest, no-nonsense approach to product reviews. I test every product thoroughly and provide unbiased recommendations.</p>
+                        <p>When I'm not reviewing the latest tech, you can find me reading & solving some coding bug or experimenting with smart home automation in my apartment.</p>
+                    </div>
+                    <div class="contact-info" id="contact">
+                        <h3>Contact Me</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>primestacktechnology@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>(+232) 75-369-687</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Freetown, Sierra Leone</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do you test the products you review?</span>
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>I spend at least 2-4 weeks with each product, using it in real-world scenarios similar to how most consumers would. I evaluate performance, ease of use, build quality, and value for money. For tech products, I run benchmark tests where applicable.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Do you receive products for free from manufacturers?</span>
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Sometimes manufacturers send products for review, but I always disclose this. Regardless of how I acquire a product, my reviews are always honest and unbiased. I frequently purchase products myself to ensure complete impartiality.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>How do affiliate links work?</span>
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>When you click on an affiliate link and make a purchase, I earn a small commission at no additional cost to you. This helps support the work I do on Gadget Plug. I only recommend products I truly believe in.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can I suggest a product for review?</span>
+                    <i class="fas fa-chevron-down faq-toggle"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! I welcome suggestions from my readers. Please email me at suggestions@gadgetplug.com with your ideas. While I can't review everything, I do consider all requests and prioritize products that would be most valuable to my audience.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Gadget Plug</h3>
+                    <p>Your trusted source for honest tech reviews and gadget recommendations.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#products">All Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" data-category="home">Home</a></li>
+                        <li><a href="#" data-category="office">Office</a></li>
+                        <li><a href="#" data-category="kitchen">Kitchen Items</a></li>
+                        <li><a href="#" data-category="smart-home">Smart Home</a></li>
+                        <li><a href="#" data-category="building">Building</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Affiliate Disclosure</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Develop By PrimeStack Technology.</p>
+                <p>&copy; 2025 Gadget Plug. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="script.js">
+       
+    </script>
+</body>
+</html>
